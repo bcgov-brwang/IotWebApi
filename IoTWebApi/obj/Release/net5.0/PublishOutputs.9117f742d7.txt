@@ -1,0 +1,11 @@
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\IoTWebApi.exe
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\IoTWebApi.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\IoTWebApi.deps.json
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\IoTWebApi.runtimeconfig.json
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\IoTWebApi.pdb
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
