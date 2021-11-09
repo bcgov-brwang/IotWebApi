@@ -2,6 +2,7 @@ C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\I
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\css\site.css
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\favicon.ico
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\js\site.js
+C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\js\test.js
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -35,6 +36,7 @@ C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\w
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.js
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.map
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\wwwroot\test.html
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\appsettings.json
 C:\Users\BRWANG\source\repos\IoTWebApi\IotWebApp\obj\Release\net5.0\PubTmp\Out\IotWebApp.dll

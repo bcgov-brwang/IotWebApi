@@ -5,7 +5,13 @@ C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\I
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\IoTWebApi.deps.json
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\IoTWebApi.runtimeconfig.json
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\IoTWebApi.pdb
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Azure.Core.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Azure.Storage.Blobs.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Azure.Storage.Common.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\PubTmp\Out\System.Memory.Data.dll

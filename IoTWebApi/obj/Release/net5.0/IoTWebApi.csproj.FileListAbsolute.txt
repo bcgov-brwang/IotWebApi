@@ -27,3 +27,9 @@ C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\ref\IoTWebAp
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\IoTWebApi.pdb
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\IoTWebApi.genruntimeconfig.cache
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Release\net5.0\IoTWebApi.csproj.AssemblyReference.cache
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Release\net5.0\Azure.Core.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Release\net5.0\Azure.Storage.Blobs.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Release\net5.0\Azure.Storage.Common.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Release\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Release\net5.0\Newtonsoft.Json.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Release\net5.0\System.Memory.Data.dll
