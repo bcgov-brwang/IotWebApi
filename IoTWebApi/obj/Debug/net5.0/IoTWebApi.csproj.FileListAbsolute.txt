@@ -11,7 +11,6 @@ C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Debug\net5.0\Microsoft.Open
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Debug\net5.0\IoTWebApi.csproj.AssemblyReference.cache
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Debug\net5.0\IoTWebApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Debug\net5.0\IoTWebApi.AssemblyInfoInputs.cache
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Debug\net5.0\IoTWebApi.AssemblyInfo.cs
@@ -33,3 +32,4 @@ C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Debug\net5.0\Azure.Storage.
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Debug\net5.0\Azure.Storage.Common.dll
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\bin\Debug\net5.0\System.Memory.Data.dll
+C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\obj\Debug\net5.0\IoTWebApi.csproj.AssemblyReference.cache

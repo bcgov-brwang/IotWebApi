@@ -1,1 +1,0 @@
-{"Data":[{"Id":1,"EventTime":null,"Latitude":44.9,"Longitude":89.09,"Depth":0,"Maganitude":1.2,"Region":"test region","HasShakeMap":false,"ShakeMapUrl":null}],"HasError":false,"Error":null}

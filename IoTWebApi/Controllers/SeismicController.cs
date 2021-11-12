@@ -62,7 +62,8 @@ namespace IoTWebApi.Controllers
         [HttpPost("login")]
         public async Task<string> Login()
         {
-            var user = new User { UserName = "testUser", Password = "111" };
+            string returnedToken = null;
+    
             var url = @"http://api.bcsims.ca/User/login";
             using (var client = new HttpClient())
             {
@@ -93,20 +94,31 @@ namespace IoTWebApi.Controllers
                 var result = await client.PostAsync(url, stringContent);
                 if (result.IsSuccessStatusCode)
                 {
-                    string tocken = await result.Content.ReadAsStringAsync();
-                    dynamic returnJson = JsonConvert.DeserializeObject(tocken);
+                    string token = await result.Content.ReadAsStringAsync();
+                    int tokenLen = token.Length - 42 - 33;
+                    string t = token.Substring(42, tokenLen);
+
+                    //dynamic returnJson = JsonConvert.DeserializeObject(token);
+                    returnedToken = t;
+
+
                 }
 
 
             }
 
-            return "test";
+            return returnedToken;
         }
 
 
         [HttpGet("recent")]
-        public async Task<SeismicResponse> Recent()
+        public async Task<string> Recent()
         {
+            var token = await Login();
+
+            //var token = @"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzY1ODQxNzgsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzU5IiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNTkifQ.8jS3XFJQjsAUTwnIzfUU-elTWRUu6kuaKsKDASJIb4Q";
+
+
             var url = @"http://api.bcsims.ca/Earthquakes/recent-earthquakes";
             using (var client = new HttpClient())
             {
@@ -114,31 +126,31 @@ namespace IoTWebApi.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer LoginTokenHere");
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer "+ token);
 
 
                 // HTTP GET
                 HttpResponseMessage response = await client.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {
-                    string tocken = await response.Content.ReadAsStringAsync();
-                    dynamic json = JsonConvert.DeserializeObject(tocken);
+                    string res = await response.Content.ReadAsStringAsync();
+                    dynamic json = JsonConvert.DeserializeObject(res);
 
 
-                    var res = new SeismicResponse();
-                    res.Data = new List<SeismicData>();
-                    var d = new SeismicData
-                    {
-                        Id = 1,
-                        HasShakeMap = false,
-                        Latitude = 44.90,
-                        Longitude = 89.09,
-                        Region = "test region",
-                        Maganitude = 1.2,
+                    //var res = new SeismicResponse();
+                    //res.Data = new List<SeismicData>();
+                    //var d = new SeismicData
+                    //{
+                    //    Id = 1,
+                    //    HasShakeMap = false,
+                    //    Latitude = 44.90,
+                    //    Longitude = 89.09,
+                    //    Region = "test region",
+                    //    Maganitude = 1.2,
 
-                    };
-                    res.Data.Add(d);
-                    res.HasError = false;
+                    //};
+                    //res.Data.Add(d);
+                    //res.HasError = false;
 
                     //write the json to a file
                     string file = @"C:\Users\BRWANG\projects\IoT\IMB-sent\Read_VIF\Read_VIF\bin\Debug\net5.0\seismicFile-" + DateTime.Now.Ticks.ToString() +".txt";
@@ -152,8 +164,8 @@ namespace IoTWebApi.Controllers
                        
                     }
                     Upload(file);
-                    var result = res as SeismicResponse;
-                    return result;
+                    //var result = res as SeismicResponse;
+                    return res;
                 }
 
                 return null;
@@ -260,7 +272,9 @@ namespace IoTWebApi.Controllers
         [HttpPost("download/{id}")]
         public async Task<string> Download(int id)
         {
-            var user = new User { UserName = "testUser", Password = "111" };
+
+            var token = await Login();
+         
             var url = @"http://api.bcsims.ca/Earthquakes/download/"+ id;
             using (var client = new HttpClient())
             {
@@ -268,23 +282,8 @@ namespace IoTWebApi.Controllers
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                client.DefaultRequestHeaders.Add("Authorization", "Bearer LoginTokenHere");
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + token);
 
-
-                // HTTP GET
-                //HttpResponseMessage response = await client.GetAsync(url);
-                //if (response.IsSuccessStatusCode)
-                //{
-                //    string tocken = await response.Content.ReadAsStringAsync();
-                //    dynamic returnJson = JsonConvert.DeserializeObject(tocken);
-                //}
-
-                //var myObject = (dynamic)new JsonObject();
-                //myObject.userName = "some data";
-                //myObject.password = "some more data";
-
-                //var content = new StringContent(jsonObject.ToString(), Encoding.UTF8, "application/json");
-                //var result = client.PostAsync(url, content).Result;
 
                 var data = new
                 {
@@ -301,16 +300,33 @@ namespace IoTWebApi.Controllers
                 var stringContent = new StringContent(json, UnicodeEncoding.UTF8, "application/json"); // use MediaTypeNames.Application.Json in Core 3.0+ and Standard 2.1+
 
 
-                var result = await client.PostAsync(url, stringContent);
-                if (result.IsSuccessStatusCode)
+                var response = await client.PostAsync(url, stringContent);
+
+
+
+
+
+
+                var fileName = $"{id}.zip";
+                var localFilePath = @"C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\";
+
+                var stream = await response.Content.ReadAsStreamAsync();
+
+                var testStream = new FileStream(@"C:\test\test.txt", FileMode.Open, FileAccess.Read);
+
+                StreamReader sr = new StreamReader(testStream);
+
+
+                using (var fileStream_1 = System.IO.File.Create(localFilePath + fileName))
                 {
-                    string tocken = await result.Content.ReadAsStringAsync();
-                    dynamic returnJson = JsonConvert.DeserializeObject(tocken);
+                    stream.Seek(0, SeekOrigin.Begin);
+                    stream.CopyTo(fileStream_1);
                 }
+
 
             }
 
-            return "test";
+            return "Downloaded";
         }
 
 

@@ -165,7 +165,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/SeismicResponse"
+              "type": "string"
             }
           }
         }
@@ -284,60 +284,6 @@
     }
   },
   "definitions": {
-    "SeismicData": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "eventTime": {
-          "type": "string"
-        },
-        "latitude": {
-          "format": "double",
-          "type": "number"
-        },
-        "longitude": {
-          "format": "double",
-          "type": "number"
-        },
-        "depth": {
-          "format": "int32",
-          "type": "integer"
-        },
-        "maganitude": {
-          "format": "double",
-          "type": "number"
-        },
-        "region": {
-          "type": "string"
-        },
-        "hasShakeMap": {
-          "type": "boolean"
-        },
-        "shakeMapUrl": {
-          "type": "string"
-        }
-      }
-    },
-    "SeismicResponse": {
-      "type": "object",
-      "properties": {
-        "data": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/SeismicData"
-          }
-        },
-        "hasError": {
-          "type": "boolean"
-        },
-        "error": {
-          "type": "string"
-        }
-      }
-    },
     "WeatherForecast": {
       "type": "object",
       "properties": {
