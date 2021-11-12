@@ -272,7 +272,8 @@ namespace IoTWebApi.Controllers
         [HttpPost("download/{id}")]
         public async Task<string> Download(int id)
         {
-
+            var fileName = $"{id}.zip";
+            var localFilePath = @"C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\";
             var token = await Login();
          
             var url = @"http://api.bcsims.ca/Earthquakes/download/"+ id;
@@ -307,8 +308,7 @@ namespace IoTWebApi.Controllers
 
 
 
-                var fileName = $"{id}.zip";
-                var localFilePath = @"C:\Users\BRWANG\source\repos\IoTWebApi\IoTWebApi\";
+               
 
                 var stream = await response.Content.ReadAsStreamAsync();
 
@@ -325,7 +325,7 @@ namespace IoTWebApi.Controllers
 
 
             }
-
+            Upload(fileName);
             return "Downloaded";
         }
 
